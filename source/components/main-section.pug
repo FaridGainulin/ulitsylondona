@@ -1,0 +1,33 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      .main-section__title
+        h1.font-w-bebas-bold.font-s-60.text-up
+          | Откройте свой секонд-хенд 
+          br
+          | магазин с высокой маржинальностью 
+          br
+          | и прибылью от 
+          span.mark 367 000 рублей в месяц
+      .main-section__form-block
+        .main-section__form-block-text.font-s-18 Получите подробный план открытия
+        form.main-section__form(data-feedback-form)
+          .main-section__adaptive
+            input.input.input--bg-white-main(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.input--bg-white-main(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--bg-red-main(type="submit") Получить
+      img.main-section__image(src="images/main-section-image.png" loading="lazy" width="620" height="702" alt="image")
+  .main-section__bottom
+    .swiper-small
+      .main-section__inner.swiper-wrapper
+        .main-section__item.swiper-slide
+          .main-section__number 1
+          .main-section__desc.font-w-semi-bold Быстрый старт
+        .main-section__item.swiper-slide
+          .main-section__number 2
+          .main-section__desc.font-w-semi-bold Надежная <br> бизнес-модель
+        .main-section__item.swiper-slide
+          .main-section__number 3
+          .main-section__desc.font-w-semi-bold Стабильная <br> прибыль
+      .small-pagination.swiper-progress-small

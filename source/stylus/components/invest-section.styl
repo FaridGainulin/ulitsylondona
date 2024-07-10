@@ -1,0 +1,72 @@
+.invest-section
+  background-color #F9F9F9
+
+  &__container
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 100px 0 124px 0
+
+  &__sub-title
+    padding 20px 0 50px 0
+    +above($breakpoints.md)
+      padding 40px 0 70px 0
+
+  &__cards
+    +above($breakpoints.xxl)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 40px
+
+  &__card
+    width 300px !important
+    +above($breakpoints.sm)
+      height: 710px
+      width 360px !important
+
+  &__card-header
+    position relative
+    color: white
+    background-color $main-red
+    text-align: center
+    padding: 46px 0 28px 0
+    border-radius: 20px 20px 0 0
+
+  &__card-number
+    position: absolute
+    width 60px
+    height: 60px
+    border-radius: 20px
+    background-color #F8E8E9
+    top: -30px
+    left 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content center
+    align-items: center
+
+  &__card-body
+    padding: 30px 20px 40px 20px
+    background-color #F3F3F3
+    border-radius: 0 0 20px 20px
+
+  &__img
+    width 260px
+    height: auto
+    border-radius: 20px
+    filter: grayscale(100%)
+    transition: filter 0.3s, box-shadow 0.3s, transform 0.3s
+    &:hover
+      filter: grayscale(0%)
+      cursor pointer
+      box-shadow: 3px 3px 20px 0px #adacac
+      transform: scale(1.01)
+    +above($breakpoints.sm)
+      width 320px
+      height: 230px
+
+  &__form
+    padding-top 30px
+    display: flex
+    flex-direction: column
+    gap: 10px

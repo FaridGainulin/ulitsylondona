@@ -1,0 +1,128 @@
+.finances-section
+  background-image: url("../images/finance-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.md)
+      padding 120px 0 40px 0
+
+  &__desc
+    padding 20px 0
+    +above($breakpoints.md)
+      padding 40px 0
+
+  &__cards
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap 20px
+      +above($breakpoints.xxl)
+        gap 40px
+
+  &__card
+    width 300px !important
+    height: 244px
+    padding 40px
+    border 1px solid black
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    box-shadow: 2px 2px 8px 0px rgb(0 0 0 / 10%)
+    +above($breakpoints.md)
+      box-shadow: none
+    +above($breakpoints.xxl)
+      width 360px !important
+    
+
+  &__card-text
+    padding: 20px 0 9px 0
+
+  &__sub-title
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__text
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      text-align: start
+      padding 145px 0 20px 0
+
+  &__image
+    width 300px
+    height: auto
+    margin: 0 auto
+    padding 20px 0 0 0
+    +above($breakpoints.md)
+      padding 0
+      position: absolute
+      width 450px
+      bottom: 0
+      right: 30px
+    +above($breakpoints.xxl)
+      width 537px
+      height: 393px
+      bottom: 0
+      right: 30px
+
+  &__img-open
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width 160px
+      height: auto
+      top 0
+      left: 0
+    +above($breakpoints.md)
+      width 239px
+      height: 178px
+      top 0
+      left: 0
+
+  &__img-discount
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width 120px
+      height: auto
+      top 0
+      right: 50px
+    +above($breakpoints.md)
+      width 194px
+      height: 200px
+      top 0
+      right: 50px
+
+  &__bottom
+    background-color $main-red
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 68px 0
+
+  &__form
+    width 100%
+    margin: 0 auto
+    display: flex
+    padding: 0 10px
+    max-width 300px
+    flex-direction: column
+    gap 10px
+    +above($breakpoints.sm)
+      max-width: 900px
+      flex-direction: row
+      gap: 40px
+      padding: 0 20px
+.item
+  +above($breakpoints.sm)
+    flex: 1 1 260px

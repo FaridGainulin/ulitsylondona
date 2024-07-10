@@ -1,0 +1,115 @@
+.start-section
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 120px 0 120px 0
+
+  &__img-man
+    display: none
+    +above($breakpoints.md)
+      display: block
+      border-radius: 50%
+      position absolute
+      width 240px
+      height: 240px
+      top: 908px
+      right: 20px
+    +above($breakpoints.xxl)
+      top: 658px
+      right: -100px
+
+  &__img-woman
+    display: none
+    +above($breakpoints.md)
+      display: block
+      border-radius: 50%
+      position absolute
+      width 240px
+      height: 240px
+      top: 908px
+      left: 20px
+    +above($breakpoints.xxl)
+      top: 658px
+      left: -100px
+
+  &__title
+    text-align: center
+    padding-bottom 50px
+    +above($breakpoints.md)
+      padding-bottom 72px
+
+  &__cards
+    +above($breakpoints.md)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap: 70px 40px
+
+  &__card
+    position relative
+    height: 240px
+    background-color #F7F7F7
+    border-radius: 10px
+    padding 30px 6px 30px 16px
+    +above($breakpoints.md)
+      padding 30px 6px 30px 26px
+      width 360px !important
+
+  &__text
+    padding-bottom 10px
+
+  &__number
+    position: absolute
+    top: -20px
+    right: 32px
+    width 40px
+    height: 40px
+    color white
+    background-color $main-red
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content center
+    +above($breakpoints.md)
+      width 60px
+      top: -30px
+      height: 60px
+
+  &__bottom
+    width 300px
+    padding 20px 10px 20px 10px
+    background-color $main-red
+    border-radius: 20px
+    margin 20px auto 0
+    +above($breakpoints.md)
+      margin 40px auto 0
+      width 760px
+      padding 39px 0 56px 0
+    +above($breakpoints.xxl)
+      margin 60px 0 0
+      width 100%
+
+  &__bottom-text
+    padding 20px 0 20px
+    +above($breakpoints.md)
+      padding 25px 0 37px
+
+  &__form
+    width 100%
+    margin: 0 auto
+    display: flex
+    padding: 0 10px
+    max-width 300px
+    flex-direction: column
+    gap 10px
+    +above($breakpoints.md)
+      max-width: 900px
+      flex-direction: row
+      gap: 40px
+      padding: 0 20px
+.item2
+  +above($breakpoints.md)
+    flex: 1 1 260px

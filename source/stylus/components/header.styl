@@ -1,0 +1,36 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    justify-content space-between
+    align-items: center
+    gap: 30px
+    +above($breakpoints.sm)
+      gap 0
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__title-brand
+    padding-bottom 6px
+
+  &__logo-img
+    width 80px
+    height auto
+    +above($breakpoints.sm)
+      width 100px
+      height: 100px
+
+  &__connection
+    width 100%
+    max-width: 240px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content flex-end
+    gap 8px
+    +above($breakpoints.sm)
+      gap 20px
+

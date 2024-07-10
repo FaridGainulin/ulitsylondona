@@ -1,0 +1,103 @@
+.input
+  height: 70px
+  width 100%
+  padding: 0 30px;
+  font-family: $base-font-family
+  font-weight: 400
+  font-size: 18px;
+  line-height: 140%
+  color: $color-white
+  background-color: $main-red
+  border 1px solid $color-white
+  border-radius: 100px;
+  transition border-color 0.3s, box-shadow 0.3s
+  &:hover
+    border 1px solid #fff
+  &:focus
+    color: $color-white
+    caret-color: $color-white
+    border 1px solid $color-grey
+    box-shadow: 3px 3px 20px 0px #fff
+    ::placeholder
+      color: $color-white
+  &::placeholder
+    color: $color-white
+  +above($breakpoints.sm)
+    height: 75px
+  +above($breakpoints.md)
+    height: 80px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 57px 0px #fff
+    background-color #fff
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--bg-white-main
+    height: 60px
+    font-family: "Manrope-Light"
+    font-size: 14px;
+    padding: 0 20px;
+    background-color: $color-white
+    color: $color-grey
+    border 1px solid $color-grey
+    &:hover
+      border 1px solid $color-grey-main
+    &:focus
+      box-shadow: 3px 3px 20px 0px $color-grey
+      caret-color: $color-black
+      color: $color-black
+      ::placeholder
+        color: $color-black
+    &::placeholder
+      color: $color-grey
+    +above($breakpoints.sm)
+      height: 65px
+    +above($breakpoints.md)
+      height: 70px
+
+  &--bg-white
+    height: 70px
+    background-color: $color-white
+    font-size: 18px;
+    padding: 0 20px
+    color: $color-grey
+    border 1px solid $color-grey
+    &:hover
+      border 1px solid $color-grey-main
+    &:focus
+      color: $color-black
+      box-shadow: 3px 3px 20px 0px $color-grey
+      caret-color: $color-black
+      ::placeholder
+        color: $color-black
+    &::placeholder
+      color: $color-grey
+    +above($breakpoints.sm)
+      height: 75px
+    +above($breakpoints.md)
+      height: 80px
+
+  &--bg-inherit
+    background-color: inherit
+
+  &--textarea
+    outline none
+    padding: 23px 0 0 34px
+    resize: none
+    height: 120px
+

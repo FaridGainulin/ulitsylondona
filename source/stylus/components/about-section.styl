@@ -1,0 +1,57 @@
+.about-section
+  background-image: url("../images/about-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    color: black
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 120px 0 120px 0
+
+  &__inner
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    gap: 20px
+    +above($breakpoints.xxl)
+      flex-direction: row
+      align-items: center
+      gap: 71px
+
+  &__image
+    width 150px
+    height: auto
+    margin: 0 auto
+    +above($breakpoints.lg)
+      width 250px
+    +above($breakpoints.xxl)
+      width 299px
+      height: 380px
+
+  &__inner-right
+    text-align: center
+    width 100%
+    max-width: 790px
+    padding 20px 10px 20px 10px
+    position relative
+    background-color #fff
+    border-radius: 10px
+    +above($breakpoints.sm)
+      padding 40px 40px 50px 40px
+      border-radius: 20px
+    +above($breakpoints.xxl)
+      text-align: start
+
+  &__img-quotes
+    position: absolute
+    width: 20px;
+    height: auto;
+    top: -5px;
+    left: 17px;
+    +above($breakpoints.sm)
+      width 46px
+      height: 120px
+      top: -50px;
+      left: 47px;
