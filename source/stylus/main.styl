@@ -58,16 +58,14 @@ body
   flex-direction: column
   overflow-x: hidden
 
-.no-br
-  display: none
-  +above($breakpoints.sm)
-    display: block
-
+.main
+  flex: 1
 
 .wrapper
   max-width: 320px
   margin: 0 auto
   padding: 0 6px
+  width 100%
   +above($breakpoints.sm)
     max-width: 750px
     padding: 0 12px
@@ -91,9 +89,6 @@ body
   +above($breakpoints.xxl)
     padding: 0 20px
     max-width: 1320px
-
-.main
-  flex: 1
 
 .form-column
   display: flex

@@ -1,17 +1,14 @@
 .thanks-section
   height: 100%
-  background-image: url("../images/main-section-bg.jpg")
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content center
+  align-items: center
 
   &__container
-    padding 145px 0 144px 0
     max-width: 720px
     margin: 0 auto
     text-align: center
-    +above($breakpoints.sm)
-      padding 138px 0
 
   &__inner-text
     padding: 20px 0 40px 0
@@ -31,3 +28,15 @@
     +above($breakpoints.sm)
       width 170px
       padding-left 25px
+
+.thanks-page
+  background-image: url("../images/main-section-bg.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__header,
+  &__footer
+    padding 20px 0
+    +above($breakpoints.md)
+      padding 43px 0
